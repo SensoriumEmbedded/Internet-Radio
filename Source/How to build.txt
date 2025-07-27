@@ -1,0 +1,42 @@
+
+How to Build:
+
+  Arduino IDE, v2.3.2 was last used
+  Set sketchbook (lib) location to Source folder (contains libraries)
+  
+  Additional board manager:  https://dl.espressif.com/dl/package_esp32_index.json   -or-
+                             https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+  Board: "ESP32 Dev Module" (near top of list)  (was NodeMCU-32S)
+
+  7/27/2025 lib info:
+    Using library SPI at version 3.0.4 in folder: C:\Users\trav\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.4\libraries\SPI 
+    Using library TFT_eSPI at version 2.4.61 in folder: D:\MyData\Geek Stuff\Projects\Internet Radio\Internet-Radio\Source\libraries\TFT_eSPI-2.4.61 
+    Using library FS at version 3.0.4 in folder: C:\Users\trav\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.4\libraries\FS 
+    Using library SPIFFS at version 3.0.4 in folder: C:\Users\trav\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.4\libraries\SPIFFS 
+    Using library VS1053 Library for ESP8266/ESP32 at version 1.1.2 in folder: D:\MyData\Geek Stuff\Projects\Internet Radio\Internet-Radio\Source\libraries\ESP_VS1053_Library 
+    Using library WiFi at version 3.0.4 in folder: C:\Users\trav\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.4\libraries\WiFi 
+    Using library Networking at version 3.0.4 in folder: C:\Users\trav\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.4\libraries\Network 
+    Using library Time at version 1.6.1 in folder: D:\MyData\Geek Stuff\Projects\Internet Radio\Internet-Radio\Source\libraries\Time 
+    Using library Bounce2 at version 2.57 in folder: D:\MyData\Geek Stuff\Projects\Internet Radio\Internet-Radio\Source\libraries\Bounce2 
+    Using library RotaryEncoder at version 1.5.2 in folder: D:\MyData\Geek Stuff\Projects\Internet Radio\Internet-Radio\Source\libraries\RotaryEncoder 
+    Using library SD at version 3.0.4 in folder: C:\Users\trav\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.4\libraries\SD 
+    Using library TJpg_Decoder at version 1.0.5 in folder: D:\MyData\Geek Stuff\Projects\Internet Radio\Internet-Radio\Source\libraries\TJpg_Decoder 
+    Using library LittleFS at version 3.0.4 in folder: C:\Users\trav\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.4\libraries\LittleFS 
+    "C:\\Users\\trav\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-x32\\2302/bin/xtensa-esp32-elf-size" -A "C:\\Users\\trav\\AppData\\Local\\Temp\\arduino\\sketches\\2D6387340B86BC38645DDF778E6259B7/InternetRadio.ino.elf"
+    Sketch uses 1066773 bytes (81%) of program storage space. Maximum is 1310720 bytes.
+    Global variables use 124436 bytes (37%) of dynamic memory, leaving 203244 bytes for local variables. Maximum is 327680 bytes.
+
+
+  Set Driver in libraries\TFT_eSPI\User_Setup.h
+    (comment out one display)
+    #define HX8357D_DRIVER   //$40 Blue Adafruit board used on hardwired proto     https://www.adafruit.com/product/2050
+    #define ILI9488_DRIVER   //$25 Red board from Amazon     https://www.amazon.com/dp/B08MQLSCRP
+    (Pin updates when updating library)
+    #define TFT_MISO 19
+    #define TFT_MOSI 23
+    #define TFT_SCLK 18
+    #define TFT_CS   15  // Chip select control pin
+    #define TFT_DC    0  //2  // Data Command control pin
+    //#define TFT_RST   4  // Reset pin (could connect to RST pin)
+    #define TFT_RST  -1  // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
