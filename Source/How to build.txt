@@ -1,8 +1,8 @@
 
 How to Build:
 
-  Arduino IDE, v2.3.2 was last used
-  Set sketchbook (lib) location to Source folder (contains libraries)
+  Arduino IDE, v2.3.2 was last used, newer should be fine
+  Set sketchbook (lib) location to Source folder (contains /libraries)
   
   Additional board manager:  https://dl.espressif.com/dl/package_esp32_index.json   -or-
                              https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
@@ -27,16 +27,16 @@ How to Build:
     Sketch uses 1066773 bytes (81%) of program storage space. Maximum is 1310720 bytes.
     Global variables use 124436 bytes (37%) of dynamic memory, leaving 203244 bytes for local variables. Maximum is 327680 bytes.
 
-
-  Set Driver in libraries\TFT_eSPI\User_Setup.h
-    (comment out one display)
-    #define HX8357D_DRIVER   //$40 Blue Adafruit board used on hardwired proto     https://www.adafruit.com/product/2050
-    #define ILI9488_DRIVER   //$25 Red board from Amazon     https://www.amazon.com/dp/B08MQLSCRP
-    (Pin updates when updating library)
-    #define TFT_MISO 19
-    #define TFT_MOSI 23
-    #define TFT_SCLK 18
-    #define TFT_CS   15  // Chip select control pin
-    #define TFT_DC    0  //2  // Data Command control pin
-    //#define TFT_RST   4  // Reset pin (could connect to RST pin)
-    #define TFT_RST  -1  // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
+  Modified for ILI9488_DRIVER, but HX8357D_DRIVER can be used:
+    Set Driver in libraries\TFT_eSPI\User_Setup.h
+      (comment out one display)
+      #define HX8357D_DRIVER   //$40 Blue Adafruit board used on hardwired proto     https://www.adafruit.com/product/2050
+      #define ILI9488_DRIVER   //$25 Red board from Amazon     https://www.amazon.com/dp/B08MQLSCRP
+      (Pin updates when updating library)
+      #define TFT_MISO 19
+      #define TFT_MOSI 23
+      #define TFT_SCLK 18
+      #define TFT_CS   15  // Chip select control pin
+      #define TFT_DC    0  //2  // Data Command control pin
+      //#define TFT_RST   4  // Reset pin (could connect to RST pin)
+      #define TFT_RST  -1  // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
