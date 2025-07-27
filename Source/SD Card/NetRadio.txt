@@ -1,0 +1,51 @@
+0.80
+2022/07/19  15:54:47
+us.pool.ntp.org
+-7
+NETGEAR27
+silenthippo917
+4
+1940s/50s Radio Retro
+64.150.176.42
+8098
+/
+JEMP (Phish) Radio
+streaming.radio.co
+80
+/sd71de59b3/listen
+Zappa Radio
+streams.norbert.de
+8000
+/zappa.mp3
+Rush Radio
+stream2.rushradio.org
+8874
+/stream
+Tripping Tree Radio
+s7.voscast.com
+10156
+/stream
+Groove Salad (SomaFM)
+ice2.somafm.com
+80
+/groovesalad-128-mp3
+Drone Zone (SomaFM)
+ice4.somafm.com
+80
+/dronezone-128-mp3
+Longplayer 1000 Year Song
+icecast.spc.org
+8000
+/longplayer
+XRDS.fm  Clarksdale, MS
+us1.internet-radio.com
+8321
+/
+Music on Covers (SomaFM)
+ice2.somafm.com
+80
+/covers-128-mp3
+MetalRock.FM
+kathy.torontocast.com
+2820
+/;
