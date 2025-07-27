@@ -1,13 +1,18 @@
 
 How to Build:
 
-  Arduino IDE, v2.3.2 was last used, newer should be fine
-  Set sketchbook (lib) location to Source folder (contains /libraries)
+  Arduino IDE, v2.3.2 was last used, newer should be fine.
+  
+  Libraries are included to preserve revision and modification of TFT_eSPI:
+   Set sketchbook (lib) location to Source folder (contains /libraries)
   
   Additional board manager:  https://dl.espressif.com/dl/package_esp32_index.json   -or-
                              https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
   Board: "ESP32 Dev Module" (near top of list)  (was NodeMCU-32S)
+
+
+
 
   7/27/2025 lib info:
     Using library SPI at version 3.0.4 in folder: C:\Users\trav\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.0.4\libraries\SPI 
