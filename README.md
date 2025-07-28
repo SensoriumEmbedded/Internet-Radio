@@ -11,6 +11,8 @@ ESP32 based WiFi Internet Radio with display, rotary encoder controls, and SD st
 |--|--|
 |<video src="Pictures/1941 Philco/Internet Radio_01.mp4" title="1941 Philco project"></video>|![alt text](<Pictures/1941 Philco/20220625_173046.jpg>)|
 
+<video controls src="Pictures/1941 Philco/Internet Radio_01.mp4" title="Title"></video>
+
 ## Features
 * Plays streaming MP3 stations
   * Large buffer for smooth playback
